@@ -326,3 +326,9 @@ try {
 } catch(r) {}
 DD_belatedPNG.createVmlNameSpace();
 DD_belatedPNG.createVmlStyleSheet();
+
+function toggleDarkLight() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
