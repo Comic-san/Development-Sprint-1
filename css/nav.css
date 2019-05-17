@@ -2,7 +2,7 @@
 
 body{
 	background: url(../img/bd-bg.png) repeat-x;
-	
+
 }
 
 
@@ -30,7 +30,7 @@ body{
 	padding-top:37px ;
 
 	padding-bottom: 84px;
-	
+
 		/*background-color: #bfa;*/
 }
 
@@ -38,9 +38,8 @@ body{
 
 .nav{
 
-	float: right;
-
 	margin-top: 22px;
+	margin-left: 10%;
 }
 
 .nav li{
@@ -55,7 +54,7 @@ body{
 
 .nav a{
 
-	font: bold 12px Georgia;
+	font: bold 12px Helvetica;
 
 	color: #666;
 
@@ -71,7 +70,7 @@ body{
 .banner{
 
 	height: 356px;
-	
+
 
 	position: relative;
 }
@@ -80,7 +79,7 @@ body{
 .pointDiv{
 
 	position: absolute;
-	
+
 	top: 314px;
 	left: 15px;
 }
@@ -93,24 +92,36 @@ body{
 	height: 17px;
 
 	margin-left: 4px;
-	
+
 	background: url(../img/pointer.png) no-repeat;
 }
 
-
-.pointDiv .active,
-.pointDiv a:hover{
-	background: url(../img/pointer-active.png) no-repeat;
+.card-topic {
+  padding: 15px;
+  text-align:center;
+	display:inline-block;
+	cursor: pointer;
+  height: 40%;
+  width: 40%;
+	border: 0.5px solid black;
+	margin:10px;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,1);
+	background-color: #f7f7f7;
 }
 
+.card-topic img {
+	margin: 5px;
+	border-radius: 5%;
+}
 
 .content h1{
 
 	text-align: center;
 
-	font: bolder 24px Georgia;
+	font: bolder 24px Arial;
 
-	padding:6px 0px 20px 0px ;	
+	padding:6px 0px 20px 0px ;
 
 	margin-bottom: 38px;
 
@@ -133,12 +144,12 @@ body{
 
 .content h2{
 	color: #11719e;
-	font:21px Georgia;
+	font:21px Arial;
 }
 
 .content .p1{
 	color: #8c8c8c;
-	font:12px Helvetica;
+	font:12px Arial;
 }
 
 
@@ -159,12 +170,13 @@ body{
 
 .content h3{
 	height: 92px;
-	font:13px Helvetica ;
+	font:13px Arial ;
 	color: #3e3e3e;
 }
 
 
 .content .lm{
+	align: right;
 
 	display: block;
 
@@ -177,21 +189,27 @@ body{
 
 	color: #016999;
 
-	font: 12px/40px Helvetica;
+	font: 12px/40px Arial;
 
 	text-indent: 1em;
 
-	margin-bottom: 35px;
+	margin: 5px;
 }
 
-
-
-
+div.container-topic {
+		text-align: center;
+    margin-top: 30px;
+		margin-left: 10%;
+		margin-right: 10%;
+    border: 1px solid gray;
+		padding: 5px 10px;
+		background-color: #F2F4FF;
+}
 
 .footer{
 	height: 173px;
 	background: #333;
-	
+
 	border-top: 10px solid #4c4c4c;
 }
 
@@ -204,15 +222,15 @@ body{
 
 
 .footer a:hover{
-	color: #cccaca;	
+	color: #cccaca;
 	text-decoration: underline;
 }
 
 .footer p{
 	margin-left:8px;
-	margin-right: 23px; 
+	margin-right: 23px;
 	margin-bottom: 6px;
-		
+
 }
 
 .footer .w{
@@ -223,40 +241,4 @@ body{
 	float: right;
 
 	display: inline;
-}
-
-div.container-Jordan {
-		text-align: center;
-    margin-top: 30px;
-		margin-left: 10%;
-		margin-right: 10%;
-    border: 1px solid gray;
-		padding: 5px 10px;
-		background-color: #ccffff;
-
-$dark-color: #111;
-$light-color: #eee;
-
-body.dark-mode {
-  background-color: $dark-color;
-  color: $light-color;
-  a {
-    color: $dark-color;
-  }
-  button {
-    background-color: $light-color;
-    color: $dark-color;
-  }
-}
-
-body.light-mode {
-  background-color: $light-color;
-  color: $dark-color;
-  a {
-    color: $dark-color;
-  }
-  button {
-    background-color: $dark-color;
-    color: $light-color;
-  }
 }
