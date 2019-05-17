@@ -233,3 +233,30 @@ div.container-Jordan {
     border: 1px solid gray;
 		padding: 5px 10px;
 		background-color: #ccffff;
+
+$dark-color: #111;
+$light-color: #eee;
+
+body.dark-mode {
+  background-color: $dark-color;
+  color: $light-color;
+  a {
+    color: $dark-color;
+  }
+  button {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+}
+
+body.light-mode {
+  background-color: $light-color;
+  color: $dark-color;
+  a {
+    color: $dark-color;
+  }
+  button {
+    background-color: $dark-color;
+    color: $light-color;
+  }
+}
