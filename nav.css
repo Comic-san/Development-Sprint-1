@@ -1,0 +1,227 @@
+
+
+body{
+	background: url(../img/bd-bg.png) repeat-x;
+	
+}
+
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.clearfix{
+	zoom: 1;
+}
+
+
+.w{
+	width: 940px;
+	margin: 0px auto;
+}
+
+
+.header{
+
+	padding-top:37px ;
+
+	padding-bottom: 84px;
+	
+		/*background-color: #bfa;*/
+}
+
+
+
+.nav{
+
+	float: right;
+
+	margin-top: 22px;
+}
+
+.nav li{
+
+	float: left;
+
+	padding: 0px 9px 8px;
+
+	border-left: dotted 1px #d6d6d6;
+}
+
+
+.nav a{
+
+	font: bold 12px Georgia;
+
+	color: #666;
+
+	text-decoration: none;
+}
+
+.nav a:hover{
+	color: #a1a1a1;
+	text-decoration: underline;
+}
+
+
+.banner{
+
+	height: 356px;
+	
+
+	position: relative;
+}
+
+
+.pointDiv{
+
+	position: absolute;
+	
+	top: 314px;
+	left: 15px;
+}
+
+.pointDiv a{
+
+	float: left;
+
+	width: 17px;
+	height: 17px;
+
+	margin-left: 4px;
+	
+	background: url(../img/pointer.png) no-repeat;
+}
+
+
+.pointDiv .active,
+.pointDiv a:hover{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+
+
+.content h1{
+
+	text-align: center;
+
+	font: bolder 24px Georgia;
+
+	padding:6px 0px 20px 0px ;	
+
+	margin-bottom: 38px;
+
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+
+.content .il , .content .cp, .content .sf{
+
+	float: left;
+	width: 300px;
+}
+
+
+.content .cp {
+	margin: 0px 20px;
+
+}
+
+
+.content h2{
+	color: #11719e;
+	font:21px Georgia;
+}
+
+.content .p1{
+	color: #8c8c8c;
+	font:12px Helvetica;
+}
+
+
+.content .imgDiv{
+
+	width: 299px;
+	height: 190px;
+
+	background: url(../img/img-bg.png) no-repeat;
+
+	margin: 16px 0px 10px 0px;
+
+	text-align: center;
+
+	padding-top:12px ;
+}
+
+
+.content h3{
+	height: 92px;
+	font:13px Helvetica ;
+	color: #3e3e3e;
+}
+
+
+.content .lm{
+
+	display: block;
+
+	width: 163px;
+	height: 40px;
+
+	background: url(../img/btn1.png) no-repeat;
+
+	text-decoration: none;
+
+	color: #016999;
+
+	font: 12px/40px Helvetica;
+
+	text-indent: 1em;
+
+	margin-bottom: 35px;
+}
+
+
+
+
+
+.footer{
+	height: 173px;
+	background: #333;
+	
+	border-top: 10px solid #4c4c4c;
+}
+
+
+.footer a , .footer p{
+	color: #999;
+	font: 11px Helvetica;
+	text-decoration: none;
+}
+
+
+.footer a:hover{
+	color: #cccaca;	
+	text-decoration: underline;
+}
+
+.footer p{
+	margin-left:8px;
+	margin-right: 23px; 
+	margin-bottom: 6px;
+		
+}
+
+.footer .w{
+	padding-top: 18px;
+}
+
+.footer .copy{
+	float: right;
+
+	display: inline;
+}
+
