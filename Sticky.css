@@ -1,8 +1,38 @@
-/* Style the navbar */
+/* Light & Dark Mode Theme */
+
+:root {
+   --primary-color: #302AE6;
+   --secondary-color: #536390;
+   --font-color: #424242;
+   --bg-color: #fff;
+   --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+   --primary-color: #9A97F3;
+   --secondary-color: #818cab;
+   --font-color: #e1e1ff;
+   --bg-color: #161625;
+   --heading-color: #818cab;
+}
+
+/* Logo & Navbar */
+
+.header{
+	padding-bottom: 10px;
+}
+
+.logo {
+	width: 300px;
+	margin-bottom: -20px;
+}
+
+/* Navbar Style */
 #navbar {
   overflow: hidden;
   background-color: #333;
 }
+
 /* Navbar links */
 #navbar a {
   float: left;
@@ -12,10 +42,6 @@
   padding: 14px;
   text-decoration: none;
 }
-/* Page content */
-.content {
-  padding: 16px;
-}
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -23,77 +49,17 @@
   top: 0;
   width: 100%;
 }
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
 }
 
-body{
-	background: url(../img/bd-bg.png) repeat-x;
-}
-
-.clearfix:before,
-.clearfix:after{
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.clearfix{
-	zoom: 1;
-}
+/* Information Cards */
 
 .w{
 	width: 940px;
 	margin: 0px auto;
-}
-
-.header{
-	padding-top:37px ;
-	padding-bottom: 84px;
-		/*background-color: #bfa;*/
-}
-
-.nav{
-	margin-top: 22px;
-	margin-left: 10%;
-}
-
-.nav li{
-	float: left;
-	padding: 0px 9px 8px;
-	border-left: dotted 1px #d6d6d6;
-}
-
-.nav a{
-	font: bold 12px Helvetica;
-	color: #666;
-	text-decoration: none;
-}
-
-.nav a:hover{
-	color: #a1a1a1;
-	text-decoration: underline;
-}
-
-.banner{
-	height: 356px;
-	position: relative;
-}
-
-.pointDiv{
-	position: absolute;
-	top: 314px;
-	left: 15px;
-}
-
-.pointDiv a{
-	float: left;
-	width: 17px;
-	height: 17px;
-	margin-left: 4px;
-	background: url(../img/pointer.png) no-repeat;
 }
 
 .card-topic {
@@ -115,6 +81,16 @@ body{
 	border-radius: 5%;
 }
 
+div.container-topic {
+		text-align: center;
+    margin-top: 30px;
+		margin-left: 10%;
+		margin-right: 10%;
+    border: 1px solid gray;
+		padding: 5px 10px;
+		background-color: #F2F4FF;
+}
+
 .content h1{
 	text-align: center;
 	font: bolder 24px Arial;
@@ -123,39 +99,9 @@ body{
 	background: url(../img/line.png) no-repeat bottom center;
 }
 
-.content .il , .content .cp, .content .sf{
-	float: left;
-	width: 300px;
-}
-
-.content .cp {
-	margin: 0px 20px;
-}
-
-
 .content h2{
 	color: #11719e;
 	font:21px Arial;
-}
-
-.content .p1{
-	color: #8c8c8c;
-	font:12px Arial;
-}
-
-.content .imgDiv{
-	width: 299px;
-	height: 190px;
-	background: url(../img/img-bg.png) no-repeat;
-	margin: 16px 0px 10px 0px;
-	text-align: center;
-	padding-top:12px ;
-}
-
-.content h3{
-	height: 92px;
-	font:13px Arial ;
-	color: #3e3e3e;
 }
 
 .content .lm{
@@ -171,74 +117,19 @@ body{
 	margin: 5px;
 }
 
-div.container-topic {
-		text-align: center;
-    margin-top: 30px;
-		margin-left: 10%;
-		margin-right: 10%;
-    border: 1px solid gray;
-		padding: 5px 10px;
-		background-color: #F2F4FF;
-}
+/* Footer */
 
 .footer{
 	height: 173px;
 	background: #333;
-
 	border-top: 10px solid #4c4c4c;
-}
-
-.footer a , .footer p{
-	color: #999;
-	font: 11px Helvetica;
-	text-decoration: none;
-}
-
-.footer a:hover{
-	color: #cccaca;
-	text-decoration: underline;
 }
 
 .footer p{
 	margin-left:8px;
 	margin-right: 23px;
 	margin-bottom: 6px;
-}
-
-.footer .w{
-	padding-top: 18px;
-}
-
-.footer .copy{
-	float: right;
-	display: inline;
-}
-
-
-
-$dark-color: #111;
-$light-color: #eee;
-
-body.dark-mode {
-  background-color: $dark-color;
-  color: $light-color;
-  a {
-    color: $dark-color;
-  }
-  button {
-    background-color: $light-color;
-    color: $dark-color;
-  }
-}
-
-body.light-mode {
-  background-color: $light-color;
-  color: $dark-color;
-  a {
-    color: $dark-color;
-  }
-  button {
-    background-color: $dark-color;
-    color: $light-color;
-  }
+  color: #999;
+  font: 11px Helvetica;
+  text-decoration: none;
 }
