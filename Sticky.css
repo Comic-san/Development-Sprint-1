@@ -73,7 +73,7 @@
 	margin:10px;
   border-radius: 5%;
   box-shadow: 0 6px 10px 0 rgba(0,0,0,1);
-	background-color: #f7f7f7;
+	background-color: #1a0e42;
 }
 
 .card-topic img {
@@ -86,22 +86,23 @@ div.container-topic {
     margin-top: 30px;
 		margin-left: 10%;
 		margin-right: 10%;
-    border: 1px solid gray;
+    border: 1px; solid gray;
 		padding: 5px 10px;
-		background-color: #F2F4FF;
+		background-color: #333333;
 }
 
 .content h1{
 	text-align: center;
 	font: bolder 24px Arial;
-	padding:6px 0px 20px 0px ;
-	margin-bottom: 38px;
+	padding:6px 0px 10px 0px ;
+	margin-bottom: 5px;
 	background: url(../img/line.png) no-repeat bottom center;
 }
 
 .content h2{
-	color: #11719e;
+	color: #4d4d4d;
 	font:21px Arial;
+  word-wrap: normal;
 }
 
 .content .lm{
@@ -139,6 +140,7 @@ body
   margin: 0;
   padding: 0;
   font-family: arial;
+  background-color: #e6e6e6;
 }
 
 section.dark
@@ -183,8 +185,8 @@ ul li span
   width: 100px;
   height: 30px;
   line-height: : 30px;
-  color: #e6e6e6;
-  background: #1a1a1a;
+  color: #1a;
+  background: #eee;
 }
 ul li span:nth-child(1)
 {
