@@ -11,7 +11,6 @@
 
 <div class="header">
   <img src= "img/cdu-logo.png" class="logo" alt="Logo">
-  <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
 </div>
 
 <div id="navbar">
@@ -90,6 +89,22 @@
               </div>
             </div>
           </section>
+        <ul>
+          <li>
+            <span>Dark</span>
+            <span>Light</span>
+          </li>
+        </ul>
+        <script src= "https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('ul').click(function(){
+              $('ul').toggleClass('active')
+              $('section').toggleClass('dark')
+            })
+          })
+        </script>
+
       <!--contact--end-->
 
       <!--footer start-->
