@@ -137,7 +137,7 @@ div.container-topic {
 		margin-right: 10%;
 		padding: 5px 10px;
 		border-radius: 5%;
-		background-color: #3b8bea;
+		background-color: #5497e6;
 }
 
 .content h1{
@@ -145,7 +145,6 @@ div.container-topic {
   font-family: 'Signika Regular', Arial, sans-serif;
 	padding: 5px 0px 10px 15px ;
 	margin-bottom: 5px;
-	background: url(../img/line.png) no-repeat bottom center;
 }
 
 .content p{
@@ -153,7 +152,6 @@ div.container-topic {
   font-family: 'OpenSans Regular', Arial, sans-serif;
 	padding: 5px 0px 10px 15px ;
 	margin-bottom: 5px;
-	background: url(../img/line.png) no-repeat bottom center;
 }
 
 .content h2{
@@ -167,11 +165,13 @@ div.container-topic {
 	display: block;
 	width: 163px;
 	height: 40px;
-	background: url(../img/btn1.png) no-repeat;
+	background: url(img/btn.png) no-repeat;
 	text-decoration: none;
 	color: #016999;
-	font: 12px/40px Arial;
+	font-family: 'Raleway Regular', Arial, sans-serif;
+	font: 12px/40px;
 	text-indent: 1em;
+	padding-top: 10px;
 	margin: 5px;
 }
 
