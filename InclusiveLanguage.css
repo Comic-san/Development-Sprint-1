@@ -1,19 +1,43 @@
-/* Light & Dark Mode Theme */
+/* Initalise Fonts */
 
-:root {
-   --primary-color: #302AE6;
-   --secondary-color: #536390;
-   --font-color: #424242;
-   --bg-color: #fff;
-   --heading-color: #292922;
+/* Navbar */
+@font-face {
+font-family: "Catamaran Regular";
+src: url("css/fonts/Catamaran-Regular.eot");
+src:
+url("css/fonts/Catamaran-Regular.woff") format("woff"),
+url("css/fonts/Catamaran-Regular.otf") format("opentype"),
+url("css/fonts/Catamaran-Regular.svg#filename") format("svg");
 }
 
-[data-theme="dark"] {
-   --primary-color: #9A97F3;
-   --secondary-color: #818cab;
-   --font-color: #e1e1ff;
-   --bg-color: #161625;
-   --heading-color: #818cab;
+/* Content */
+@font-face {
+font-family: "OpenSans Regular";
+src: url("css/fonts/OpenSans-Regular.eot");
+src:
+url("css/fonts/OpenSans-Regular.woff") format("woff"),
+url("css/fonts/OpenSans-Regular.otf") format("opentype"),
+url("css/fonts/OpenSans-Regular.svg#filename") format("svg");
+}
+
+/* H1 */
+@font-face {
+font-family: "Signika Regular";
+src: url("css/fonts/Signika-Regular.eot");
+src:
+url("css/fonts/Signika-Regular.woff") format("woff"),
+url("css/fonts/Signika-Regular.otf") format("opentype"),
+url("css/fonts/Signika-Regular.svg#filename") format("svg");
+}
+
+/* H2 */
+@font-face {
+font-family: "Raleway Regular";
+src: url("css/fonts/Raleway-Regular.eot");
+src:
+url("css/fonts/Raleway-Regular.woff") format("woff"),
+url("css/fonts/Raleway-Regular.otf") format("opentype"),
+url("css/fonts/Raleway-Regular.svg#filename") format("svg");
 }
 
 /* Logo & Navbar */
@@ -24,13 +48,13 @@
 
 .logo {
 	width: 300px;
-	margin-bottom: -20px;
+	margin-bottom: -15px;
 }
 
 /* Navbar Style */
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #b2384f;
 }
 
 /* Navbar links */
@@ -40,6 +64,7 @@
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
+  font-family: 'Catamaran Regular', Arial, sans-serif;
   text-decoration: none;
 }
 
@@ -64,16 +89,17 @@
 
 .card-topic {
   padding: 15px;
+  font-family: 'OpenSans Regular', Arial, sans-serif;
   text-align:center;
 	display:inline-block;
 	cursor: pointer;
   height: 40%;
   width: 40%;
-	border: 0.5px solid black;
+	border: 0.5px solid #090909;
 	margin:10px;
   border-radius: 5%;
   box-shadow: 0 6px 10px 0 rgba(0,0,0,1);
-	background-color: #1a0e42;
+	background-color: #c3dbf5;
 }
 
 .card-topic img {
@@ -82,18 +108,18 @@
 }
 
 div.container-topic {
-		text-align: center;
+		text-align: left;
     margin-top: 30px;
 		margin-left: 10%;
 		margin-right: 10%;
-    border: 1px; solid gray;
 		padding: 5px 10px;
-		background-color: #333333;
+		border-radius: 5%;
+		background-color: #3b8bea;
 }
 
 .content h1{
-	text-align: center;
-	font: bolder 24px Arial;
+	text-align: left;
+  font-family: 'Signika Regular', Arial, sans-serif;
 	padding:6px 0px 10px 0px ;
 	margin-bottom: 5px;
 	background: url(../img/line.png) no-repeat bottom center;
@@ -101,7 +127,7 @@ div.container-topic {
 
 .content h2{
 	color: #4d4d4d;
-	font:21px Arial;
+  font-family: 'Raleway Regular', Arial, sans-serif;
   word-wrap: normal;
 }
 
@@ -139,7 +165,7 @@ body
 {
   margin: 0;
   padding: 0;
-  background-color: #e6e6e6;
+  background-color: #ececec;
 }
 
 section.dark
