@@ -1,0 +1,220 @@
+/* Initalise Fonts */
+
+/* Navbar */
+@font-face {
+font-family: "Catamaran Regular";
+src: url("css/fonts/Catamaran-Regular.eot");
+src:
+url("css/fonts/Catamaran-Regular.woff") format("woff"),
+url("css/fonts/Catamaran-Regular.otf") format("opentype"),
+url("css/fonts/Catamaran-Regular.svg#filename") format("svg");
+}
+
+/* Content */
+@font-face {
+font-family: "OpenSans Regular";
+src: url("css/fonts/OpenSans-Regular.eot");
+src:
+url("css/fonts/OpenSans-Regular.woff") format("woff"),
+url("css/fonts/OpenSans-Regular.otf") format("opentype"),
+url("css/fonts/OpenSans-Regular.svg#filename") format("svg");
+}
+
+/* H1 */
+@font-face {
+font-family: "Signika Regular";
+src: url("css/fonts/Signika-Regular.eot");
+src:
+url("css/fonts/Signika-Regular.woff") format("woff"),
+url("css/fonts/Signika-Regular.otf") format("opentype"),
+url("css/fonts/Signika-Regular.svg#filename") format("svg");
+}
+
+/* H2 */
+@font-face {
+font-family: "Raleway Regular";
+src: url("css/fonts/Raleway-Regular.eot");
+src:
+url("css/fonts/Raleway-Regular.woff") format("woff"),
+url("css/fonts/Raleway-Regular.otf") format("opentype"),
+url("css/fonts/Raleway-Regular.svg#filename") format("svg");
+}
+
+/* Logo & Navbar */
+
+.header{
+	padding-bottom: 10px;
+}
+
+.logo {
+	width: 300px;
+	margin-bottom: -15px;
+}
+
+/* Navbar Style */
+#navbar {
+  overflow: hidden;
+  background-color: #b2384f;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  font-family: 'Catamaran Regular', Arial, sans-serif;
+  text-decoration: none;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Information Cards */
+
+.w{
+	width: 940px;
+	margin: 0px auto;
+}
+
+.card-topic {
+  padding: 15px;
+  font-family: 'OpenSans Regular', Arial, sans-serif;
+  text-align:center;
+	display:inline-block;
+	cursor: pointer;
+  height: 40%;
+  width: 40%;
+	border: 0.5px solid #090909;
+	margin:10px;
+  border-radius: 5%;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,1);
+	background-color: #c3dbf5;
+}
+
+.card-topic img {
+	margin: 5px;
+	border-radius: 5%;
+}
+
+div.container-topic {
+		text-align: left;
+    margin-top: 30px;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding: 5px 10px;
+		border-radius: 5%;
+		background-color: #3b8bea;
+}
+
+.content h1{
+	text-align: left;
+  font-family: 'Signika Regular', Arial, sans-serif;
+	padding:6px 0px 10px 0px ;
+	margin-bottom: 5px;
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+.content h2{
+	color: #4d4d4d;
+  font-family: 'Raleway Regular', Arial, sans-serif;
+  word-wrap: normal;
+}
+
+.content .lm{
+	align: right;
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png) no-repeat;
+	text-decoration: none;
+	color: #016999;
+	font: 12px/40px Arial;
+	text-indent: 1em;
+	margin: 5px;
+}
+
+/* Footer */
+
+.footer{
+	height: 173px;
+	background: #333;
+	border-top: 10px solid #4c4c4c;
+}
+
+.footer p{
+	margin-left:8px;
+	margin-right: 23px;
+	margin-bottom: 6px;
+  color: #999;
+  font: 11px Helvetica;
+  text-decoration: none;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background-color: #ececec;
+}
+
+section.dark
+{
+  background: #262626;
+  color: #fff;
+}
+ul
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 30px;
+  z-index: 1;
+  border: 1px; solid #000;
+  cursor: pointer;
+  overflow: hidden;
+}
+ul.active
+{
+  border-color: #fff;
+}
+ul li
+{
+  list-style: none;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+ul.active li
+{
+  transform:translateY(-30px);
+}
+ul li span
+{
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: : 30px;
+  color: #1a;
+  background: #eee;
+}
+ul li span:nth-child(1)
+{
+  background: #262626;
+  color: #fff;
+}
