@@ -1,3 +1,1 @@
-Famsquad
-Terell Richardo
-Jordan Tam
+Famsquad: Terell Richardo, Jordan Tam
