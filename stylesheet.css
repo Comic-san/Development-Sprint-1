@@ -337,6 +337,7 @@ ul li span:nth-child(1)
 	margin-right: 20px;
 	margin-left: 20px;
 	margin-bottom: 20px;
+	color: #000;
 }
 
 ol.loweralpha {
@@ -347,4 +348,12 @@ ol.loweralpha {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #333;
+}
+
+.centretext
+{text-align: center;}
+
+p.hang {
+	text-indent: -25px;
+	padding-left: 25px;
 }
