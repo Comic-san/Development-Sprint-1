@@ -48,7 +48,7 @@ url("css/fonts/Raleway-Regular.svg#filename") format("svg");
 	background: gainsboro;
   box-shadow: 5px 10px 8px #888888;
   padding-top:10px;
-  padding: 25px 0px 0px 100px;
+  padding: 25px 100px 0px 100px;
 }
 
 /* Logo & Navbar */
@@ -142,22 +142,24 @@ div.container-topic {
 
 .content h1{
 	text-align: left;
-  font-family: 'Signika Regular', Arial, sans-serif;
-	padding: 5px 0px 10px 15px ;
+	font-family: 'Raleway Regular', Arial, sans-serif;
+	padding: 5px 0px 10px 0px ;
 	margin-bottom: 5px;
+	font-size: 24px;
 }
 
 .content p{
 	text-align: left;
   font-family: 'OpenSans Regular', Arial, sans-serif;
-	padding: 5px 0px 10px 15px ;
+	padding: 5px 0px 10px 0px ;
 	margin-bottom: 5px;
 }
 
 .content h2{
 	color: #4d4d4d;
-  font-family: 'Raleway Regular', Arial, sans-serif;
+  font-family: 'Signika Regular', Arial, sans-serif;
   word-wrap: normal;
+	font-size: 20px;
 }
 
 .content .lm{
@@ -204,6 +206,7 @@ section.dark
   background: #262626;
   color: #fff;
 }
+
 ul
 {
   position: absolute;
@@ -248,4 +251,100 @@ ul li span:nth-child(1)
 {
   background: #262626;
   color: #fff;
+}
+
+/* Tab css from Vesa Piittinen on CodePen: https://codepen.io/Merri/pen/bytea */
+
+.tabs {
+  font-size: 0;
+  margin: 25px 0;
+}
+
+.tabs:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.tabs .tab {
+  display: inline;
+}
+
+.tabs .tab-label {
+  background: #eee;
+  border: 1px solid #ccc;
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1rem;
+  left: 1px;
+  margin-left: -1px;
+  padding: 10px;
+  vertical-align: bottom;
+	color: #000;
+}
+
+.tabs .tab > [type="radio"] {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  opacity: 0;
+  position: fixed;
+  width: 1px;
+  z-index: -1;
+}
+
+.tabs .tab-panel {
+  display: inline;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  width: 0;
+}
+
+.tabs .tab-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background: white;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+  float: left;
+  font-size: 16px;
+  font-size: 1rem;
+  margin-top: -1px;
+  width: 100%;
+	color: #000;
+}
+
+.tabs .tab [type="radio"]:checked + .tab-label {
+  background: white;
+  border-bottom-width: 0;
+  padding-bottom: 11px;
+  z-index: 1;
+}
+
+.tabs .tab [type="radio"]:checked ~ .tab-panel {
+  display: inline;
+}
+
+/* CDU Study Skills styling */
+
+.example {
+	padding: 5px;
+	border: 1px solid #CCC;
+	background-color: #ffffdc;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+ol.loweralpha {
+	list-style-type: lower-alpha;
+}
+
+.underline {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
 }
